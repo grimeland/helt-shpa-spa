@@ -241,9 +241,6 @@ export default function Home() {
                       {item.name}
                       {item.asterisk && <span className="text-cocoa"> *</span>}
                     </span>
-                    {item.duration && (
-                      <span className="text-xs sm:text-sm text-ink-soft shrink-0">{item.duration}</span>
-                    )}
                     <span className="flex-1 border-b-2 border-dotted border-ink-soft/40 min-w-6" />
                     <Stepper item={item} antall={n} onChange={(v) => settAntall(item.id, v)} />
                     {egenItem && (
@@ -322,9 +319,6 @@ export default function Home() {
                         {l.antall} × {l.item.name}
                       </span>
                       <span className="flex-1 border-b-2 border-dotted border-ink-soft/40 translate-y-[-4px]" />
-                      <span className="text-sm text-ink-soft shrink-0">
-                        {l.item.duration ?? ""}
-                      </span>
                     </li>
                   ))}
                 </ul>

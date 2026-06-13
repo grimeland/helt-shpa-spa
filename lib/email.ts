@@ -29,7 +29,6 @@ export function buildOrderEmail({ lines, navn, tidspunkt, betaling, melding, con
         <tr>
           <td style="padding: 10px 0; border-bottom: 2px dotted #d9beb6; font-family: Georgia, 'Times New Roman', serif; font-size: 17px; color: #8e4a44;">
             ${l.antall} × ${escapeHtml(l.item.name)}${l.item.asterisk ? " *" : ""}
-            ${l.item.duration ? `<span style="font-size: 13px; color: #ab7b74; font-family: Helvetica, Arial, sans-serif;">&nbsp;&nbsp;${l.item.duration}</span>` : ""}
           </td>
           <td align="right" style="padding: 10px 0; border-bottom: 2px dotted #d9beb6;"></td>
         </tr>`
@@ -136,7 +135,6 @@ export function buildConfirmedEmail({ lines, navn, tidspunkt, betaling }: Omit<O
         <tr>
           <td style="padding: 10px 0; border-bottom: 2px dotted #d9beb6; font-family: Georgia, 'Times New Roman', serif; font-size: 17px; color: #8e4a44;">
             ${l.antall} × ${escapeHtml(l.item.name)}${l.item.asterisk ? " *" : ""}
-            ${l.item.duration ? `<span style="font-size: 13px; color: #ab7b74; font-family: Helvetica, Arial, sans-serif;">&nbsp;&nbsp;${l.item.duration}</span>` : ""}
           </td>
         </tr>`
     )

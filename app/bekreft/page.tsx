@@ -48,7 +48,6 @@ export default async function BekreftSide({
                     {l.antall} × {l.item.name}
                   </span>
                   <span className="flex-1 border-b-2 border-dotted border-ink-soft/40 translate-y-[-4px]" />
-                  <span className="text-sm text-ink-soft shrink-0">{l.item.duration ?? ""}</span>
                 </li>
               ))}
             </ul>
